@@ -53,9 +53,14 @@
                 </div>
                 <div>
                     <label for="SelecLibros">Selección de libro del catálogo</label>
-                    <input type="text" id="selecLibro" placeholder="Ingresá el título" required>
+                    <input list="listaLibros" id="selecLibro" placeholder="Ingresá el título" required>
+                    <datalist id="listaLibros">
+                        <option value="Libro1"></option>
+                        <option value="Libro2"></option>
+                        <option value="Libro3"></option>
+                    </datalist>
                 </div>
-                <div class="acciones">
+                <div class="botónReserva">
                     <button type="submit">Reservar Libro</button>
                 </div>
             </form>
