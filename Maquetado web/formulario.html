@@ -13,7 +13,7 @@
         </div>
 
         <form action="/buscar" method="GET">
-            <input type="search" name= "busqueda" placeholder="Buscar en el sitio..." aria-label="Buscar en el sitio">
+            <input type="search" name= "busqueda" placeholder="Buscar en el sitio...">
             <button type="submit">Buscar</button>
         </form>
 
@@ -34,37 +34,51 @@
         </header>
         <section class="Formulario">
             <h2>Formulario de Reserva</h2>
-            <form>
-                <div>
-                    <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" placeholder="Ingresá tu nombre" required>
-                </div>
-                <div>
-                    <label for="email">Correo electrónico</label>
-                    <input type="email" id="correoElectronico" placeholder="Ingresá tu email" required>
-                </div>
-                <div>
-                    <label for="tel">Teléfono</label>
-                    <input type="tel" id="tel" placeholder="Ingresá tu teléfono">
-                </div>
-                <div>
-                    <label for="CantLibro">Cantidad de libros a reservar</label>
-                    <input type="number" id="cantLibrosReserva" placeholder="Ingresá la cantidad" min="1" max="5" required>
-                </div>
-                <div>
-                    <label for="SelecLibros">Selección de libro del catálogo</label>
-                    <input list="listaLibros" id="selecLibro" placeholder="Ingresá el título" required>
-                    <datalist id="listaLibros">
-                        <option value="Libro1"></option>
-                        <option value="Libro2"></option>
-                        <option value="Libro3"></option>
-                    </datalist>
-                </div>
+
+            <form action="/procesar-reserva" method="POST">
+                <fieldset>
+                    <legend>Datos Personales</legend>
+                    <div>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ingresá tu nombre" required>
+                    </div>
+                    <div>
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" name="email" id="email" placeholder="Ingresá tu email" required>
+                    </div>
+                    <div>
+                        <label for="tel">Teléfono</label>
+                        <input type="tel" id="tel" name="tel" placeholder="Ingresá tu teléfono">
+                    </div>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Detalles del Libro</legend>
+                    <div>
+                        <label for="CantLibro">Cantidad de libros a reservar</label>
+                        <input type="number" id="CantLibro" name="CantLibros" placeholder="Ingresá la cantidad" min="1" max="5" required>
+                    </div>
+                    <div>
+                        <label for="SelecLibros">Selección de libro del catálogo</label>
+                        <input list="listaLibros" id="SelecLibros" name="SelecLibros" placeholder="Ingresá el título" required>
+                        <datalist id="listaLibros">
+                            <option value="Libro1"></option>
+                            <option value="Libro2"></option>
+                            <option value="Libro3"></option>
+                        </datalist>
+                    </div>
+                </fieldset>
+
+                <br>
+
                 <div class="botónReserva">
                     <button type="submit">Reservar Libro</button>
                 </div>
             </form>
         </section>
+        
         <section class="preview">
             <span>Vista Previa del Libro</span>
             <img src="portada-LibroRelacionado" alt="Portada libro relacionado">
