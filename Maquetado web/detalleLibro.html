@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang = "es"> 
+<html lang="es"> 
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,7 +35,7 @@
                 <h2>Título del Libro</h2>
             </div>
             
-            <div class="Descripción Libro">
+            <div class="DescripcionLibro">
             <h2>Descripción</h2>
             <p>Una descripción sobre el libro va aquí</p>
             <h2>Autor</h2>
@@ -47,15 +47,20 @@
                 <span class="Stock">Stock Disponible</span>
 
                 <div class="Botones">
-                    <button type="button">Agregar al Carrito</button>
-                    <button type="button">Reservar Gratis</button>
+                    <form action="/agregar-carrito" method="POST">
+                        <button type="submit">Agregar al Carrito</button>
+                    </form>
+                    <br>
+                    <form action="formulario.html" method="GET">
+                        <button type="submit">Reservar Gratis</button>
+                    </form>
                 </div>
             </div>
 
         </section>
 
-        <section class="Descripción Autor">
-            <div class="Imágen Autor">
+        <section class="DescripciónAutor">
+            <div class="ImágenAutor">
                 <img src="Imágen-autor" alt="Imágen-autor">
             </div>
 
@@ -65,30 +70,30 @@
             </div>
         </section>
 
-        <section class="Libros Relacionados">
+        <section class="Libros-Relacionados">
             <h2>Libros Relacionados</h2>
 
             <div class="Carrusel">
-                <button class="FlechaIzq">&larr;</button>
+                <button type="button" class="FlechaIzq">&larr;</button>
 
-                <div class="Libro1">
-                    <img src="portada-LibroRelacionado1" alt="Portada libro relacionado 1">
-                    <p>Título del Libro 1</p>
-                    <p><strong>$19.99</strong></p>
-                </div>
+                <article class="libro-relacionado">
+                        <img src="portada-LibroRelacionado1.jpg" alt="Portada libro relacionado 1">
+                        <p>Título del Libro 1</p>
+                        <p><strong>$19.99</strong></p>
+                </article>
 
-                <div class="Libro2">
-                    <img src="portada-LibroRelacionado2" alt="Portada libro relacionado 2">
-                    <p>Título del Libro 2</p>
-                    <p><strong>$19.99</strong></p>
-                </div>
+                <article class="libro-relacionado">
+                        <img src="portada-LibroRelacionado2.jpg" alt="Portada libro relacionado 2">
+                        <p>Título del Libro 2</p>
+                        <p><strong>$19.99</strong></p>
+                </article>
 
-                <div class="Libro3">
-                    <img src="portada-LibroRelacionado3" alt="Portada libro relacionado 3">
-                    <p>Título del Libro 3</p>
-                    <p><strong>$19.99</strong></p>
-                </div>
-                <button class="FlechaDer">&rarr;</button>
+                <article class="libro-relacionado">
+                        <img src="portada-LibroRelacionado3.jpg" alt="Portada libro relacionado 3">
+                        <p>Título del Libro 3</p>
+                        <p><strong>$19.99</strong></p>
+                </article>
+                <button type="button" class="FlechaDer">&rarr;</button>
             </div>
         </section>
 
