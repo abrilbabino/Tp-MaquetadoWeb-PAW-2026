@@ -8,20 +8,22 @@
 <body>
     <header>
         <figure>
-            <img src="logo.png" alt="Logo de PawPrints">
+            <img src="logo.png" alt="">
         </figure>
 
         <form action="/buscar" method="GET">
-            <input type="search" name="busqueda" placeholder="Buscar en el sitio...">
+            <label for="busqueda">Buscar en el sitio..</label>
+            <input type="search" id="busqueda" name="busqueda" placeholder="Buscar en el sitio...">
             <button type="submit">Buscar</button>
         </form>
 
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="iniciarSesion.html">Iniciar Sesión</a></li>
+                <li><a href="SobreNosotros.html">Sobre Nosotros</a></li>
                 <li><a href="catalogo.html">Catalogo</a></li>
-                <li><a href="reserva.html">Reserva</a></li>
+                <li><a href="formulario.html">Reserva</a></li>
                 <li><a href="carrito.html">Carrito</a></li>
             </ul>
         </nav>
@@ -81,18 +83,14 @@
 
     <footer>
         <address>
-            <p>Contactanos: Calle de los Libros 123, Luján</p>
             <p>Email: <a href="mailto:info@pawprints.com">info@pawprints.com</a></p>
-        </address>
-
-        <section>
             <p>Seguinos en nuestras redes sociales:</p>
             <ul>
                 <li><a href="https://facebook.com">Facebook</a></li>
                 <li><a href="https://twitter.com">Twitter</a></li>
-                <li><a href="https://www.instagram.com/pawmap.ar/">Instagram</a></li>
+                <li><a href="https://instagram.com">Instagram</a></li>
             </ul>
-        </section>
+        </address>
 
         <p><small>&copy; 2026 PAWPrints</small></p>
     </footer>

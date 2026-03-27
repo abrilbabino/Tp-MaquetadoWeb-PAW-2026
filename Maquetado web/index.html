@@ -8,20 +8,22 @@
 <body>
     <header>
         <figure>
-            <img src="logo.png" alt="logo de PawPrints">
+            <img src="logo.png" alt="">
         </figure>
 
         <form action="/buscar" method="GET">
-            <input type="search" name="busqueda" placeholder="Buscar en el sitio...">
+            <label for="busqueda">Buscar en el sitio..</label>
+            <input type="search" id="busqueda" name="busqueda" placeholder="Buscar en el sitio...">
             <button type="submit">Buscar</button>
         </form>
 
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="iniciarSesion.html">Iniciar Sesión</a></li>
+                <li><a href="SobreNosotros.html">Sobre Nosotros</a></li>
                 <li><a href="catalogo.html">Catálogo</a></li>
-                <li><a href="reserva.html">Reserva</a></li>
+                <li><a href="formulario.html">Reserva</a></li>
                 <li><a href="carrito.html">Carrito</a></li>
             </ul>
         </nav>
@@ -39,19 +41,19 @@
             <p>¡Mirá nuestras últimas ofertas y noticias!</p>
 
             <article>
-                <img src="nuevos-ingresos.png" alt="Libros recien ingresados">
+                <img src="nuevos-ingresos.png" alt="">
                 <h3>Nuevos Ingresos</h3>
                 <p>Descubrí los últimos títulos agregados a nuestro catálogo.</p>
             </article>
 
             <article>
-                <img src="oferta-mensual.png" alt="Descuentos de este mes">
+                <img src="oferta-mensual.png" alt="">
                 <h3>Descuentos del Mes</h3>
                 <p>Obtené hasta un 50% de descuento en artículos seleccionados este mes.</p>
             </article>
 
             <article>
-                <img src="eventos.png" alt="Proximos eventos">
+                <img src="eventos.png" alt="">
                 <h3>Eventos</h3>
                 <p>¡Sumate a nuestros próximos eventos de firma de libros!</p>
             </article>
@@ -59,7 +61,7 @@
 
         <section>
             <figure>
-                <img src="tienda-fisica.jpg" alt="Interior de nuestra librería local">
+                <img src="tienda-fisica.jpg" alt="Ubicación en el mapa de la tienda física">
                 <figcaption>
                     <h2>Tienda Física</h2>
                     <p>¡Visitanos en nuestra librería local!</p>
@@ -67,7 +69,6 @@
             </figure>
             
             <address>
-                <p><strong>Dirección:</strong> Calle de los Libros 123, Luján</p>
                 <p><strong>Horarios de Atención:</strong></p>
                 <ul>
                     <li>Lun-Vie: 9 AM - 9 PM</li>
@@ -80,16 +81,13 @@
     <footer>
         <address>
             <p>Email: <a href="mailto:info@pawprints.com">info@pawprints.com</a></p>
-        </address>
-        
-        <section>
             <p>Seguinos en nuestras redes sociales:</p>
             <ul>
                 <li><a href="https://facebook.com">Facebook</a></li>
                 <li><a href="https://twitter.com">Twitter</a></li>
                 <li><a href="https://www.instagram.com/pawmap.ar/">Instagram</a></li>
             </ul>
-        </section>
+        </address>
 
         <p><small>&copy; 2026 PAWPrints</small></p>
     </footer>
