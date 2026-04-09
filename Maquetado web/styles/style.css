@@ -169,11 +169,12 @@ main > section:nth-of-type(1) h2 {
     font-size: 2.2rem;
 }
 
-main > section:nth-of-type(1) > p {
+main > section:nth-of-type(1) p {
     margin-bottom: 3rem;
     font-size: 1.15rem; 
     line-height: 1.6;
     color: var(--color-texto);
+    margin-left: 1rem;
 }
 
 main > section:nth-of-type(1) article {
@@ -200,17 +201,20 @@ main > section:nth-of-type(1) article:hover {
 main > section:nth-of-type(1) article img {
     grid-column: 1 / 2; /* Se queda en la columna 1 */
     grid-row: 1 / 3;
-    width: 100%;
+    width: 210px;
     height: 200px; /* La hacemos un cuadrado perfecto */
     object-fit: cover; /* Evita que la foto se deforme o estire */
     border-radius: 8px;
     margin: 0;
+    image-orientation: from-image;
+    display: block;
+    margin: 0 auto;
 
 }
 
 main > section:nth-of-type(1) article h3 {
     font-size: 1.6rem; 
-    margin-top: 0;
+    margin-left: 1rem;
     margin-bottom: 0.8rem;
     color: var(--color-violeta);
     
