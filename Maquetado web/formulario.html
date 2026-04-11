@@ -25,6 +25,12 @@
       </form>
 
       <nav>
+        <input type="checkbox" id="menu-hamburguesa">
+        
+        <label for="menu-hamburguesa" class="label-hamburguesa">
+          <img src="img/menu-hamburguesa.png" alt="Abrir menú">
+        </label>
+        
         <ul>
           <li><a href="index.html">Inicio</a></li>
           <li><a href="iniciarSesion.html">Iniciar Sesión</a></li>
@@ -88,19 +94,15 @@
               required
             />
 
-            <label for="SelecLibros">Selección de libro del catálogo</label>
+            <label for="TituloLibros">título del libro a reservar</label>
             <input
-              list="listaLibros"
-              id="SelecLibros"
-              name="SelecLibros"
-              placeholder="Ingresá el título"
+              type="text"
+              id="TituloLibros"
+              name="TituloLibros"
+              placeholder="Ingresá título del libro"
+              autocomplete="off" 
               required
             />
-            <datalist id="listaLibros">
-              <option value="Libro1"></option>
-              <option value="Libro2"></option>
-              <option value="Libro3"></option>
-            </datalist>
           </fieldset>
 
           <br />

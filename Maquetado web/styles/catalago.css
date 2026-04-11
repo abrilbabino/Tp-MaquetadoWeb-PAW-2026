@@ -112,9 +112,7 @@
     max-width: 115px;
 }
 
-/* ==============================================
-   DISEÑO PC (Más de 768px) SOLO PARA CATÁLOGO
-============================================== */
+/* DISEÑO PC (Más de 768px) */
 @media screen and (min-width: 768px) { 
     .catalago-main {
         display: grid;

@@ -99,9 +99,7 @@ footer p small {
     margin-left: 0.7rem;
 }
 
-/* ==============================================
-   DISEÑO PC (Más de 768px) SOLO PARA LAYOUT
-============================================== */
+/* DISEÑO PC (Más de 768px) */
 @media screen and (min-width: 768px) { 
     body > header {
         padding: 1rem 0.5rem;

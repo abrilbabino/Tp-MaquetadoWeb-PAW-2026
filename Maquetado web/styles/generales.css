@@ -1,8 +1,3 @@
-html, body {
-    overflow-x: hidden;
-    max-width: 100%;
-}
-
 :root {
     --color-violeta: #662483; 
     --color-azul: #283583;
@@ -21,7 +16,6 @@ body {
     background-color: var(--color-fondo);
     color: var(--color-texto);
     font-family: var(--fuente-cuerpo); 
-    line-height: 1.6; 
     font-size: 1rem;
 }
 
