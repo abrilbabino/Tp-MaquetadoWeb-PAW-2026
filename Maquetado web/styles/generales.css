@@ -1,0 +1,40 @@
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+:root {
+    --color-violeta: #662483; 
+    --color-azul: #283583;
+    --color-verde: #00A551;
+    --color-amarillo: #F9B233;
+    --color-magenta: #E3004F;
+    --color-texto: #333333;   
+    --color-fondo: #FFFFFF;   
+    --color-gris-claro: #F5F5F5;
+   
+    --fuente-titulos: 'Montserrat', sans-serif;
+    --fuente-cuerpo: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: var(--fuente-cuerpo); 
+    line-height: 1.6; 
+    font-size: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--fuente-titulos);
+    font-weight: 700;
+}
+
+a {
+    color: var(--color-azul);
+    text-decoration: none;
+}
+
+a:hover, .btn-cargar:hover {
+    color: var(--color-magenta); 
+}

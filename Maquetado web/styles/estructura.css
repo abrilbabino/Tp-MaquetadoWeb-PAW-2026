@@ -1,0 +1,158 @@
+/* HEADER Y BUSCADOR (Celular) */
+body > header {
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 4px solid var(--color-amarillo); 
+    background-color: var(--color-fondo);
+    position: sticky;
+    top: 0; 
+    z-index: 1000; 
+}
+
+header figure img { max-width: 140px; height: auto; }
+header form label { display: none; }
+
+header form {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end; 
+    margin-right: 1.5rem;
+}
+
+header form input[type="search"] {
+    width: 100%;
+    max-width: 280px;
+    min-width: 150px; 
+    padding: 0.5rem; 
+    border: 1.5px solid var(--color-azul); 
+    border-radius: 25px; 
+    background-image: url('../img/lupa.png'); 
+    background-repeat: no-repeat;
+    background-position: right 10px center; 
+    background-size: 16px; 
+}
+
+header form button { display: none; }
+
+/* NAVEGACIÓN (Celular) */
+body > header nav {
+    width: 100%; 
+    margin-top: 0.2rem; 
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: auto;  
+}
+
+nav a {
+    font-weight: 500; 
+    text-transform: capitalize; 
+    letter-spacing: 0.35px;
+    color: var(--color-azul);
+    white-space: nowrap;   
+}
+
+/* FOOTER (Celular) */
+footer {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    border-top: 3px solid var(--color-amarillo);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+footer address p:first-of-type { display: none; }
+footer address p { font-weight: 600; margin: 0; }
+
+footer address {
+    font-style: normal; 
+    flex-wrap: wrap; 
+    align-items: center;
+    padding: 0;
+    display: flex;
+}
+
+footer ul {
+    display: flex;
+    gap: 0.8rem;
+    justify-content: center;
+    margin-left: 1rem;
+}
+
+footer p small {
+    color: var(--color-violeta);
+    font-weight: 600;
+    font-size: 0.9rem;
+    white-space: nowrap; 
+    margin-right: 1rem;
+    margin-left: 0.7rem;
+}
+
+/* ==============================================
+   DISEÑO PC (Más de 768px) SOLO PARA LAYOUT
+============================================== */
+@media screen and (min-width: 768px) { 
+    body > header {
+        padding: 1rem 0.5rem;
+        flex-wrap: nowrap;
+    }
+
+    header form {
+        min-width: 350px;
+        max-width: 600px; 
+        margin-left: auto; 
+        margin-right: 2rem; 
+        justify-content: flex-end;
+    }
+
+    header form input[type="search"] { max-width: 500px; }
+
+    body > header nav {
+        width: auto; 
+        margin-top: 0; 
+        margin-right: 2rem;
+    }
+
+    nav ul {
+        flex-wrap: nowrap; 
+        gap: 2.2rem;
+    }
+
+    nav a {
+        font-weight: 600; 
+        text-transform: uppercase;
+        font-size: 0.85rem;
+    }
+
+    footer {
+        flex-wrap: nowrap; 
+        padding: 2rem 5%;
+    }
+
+    footer address {
+        flex: 1; 
+        justify-content: flex-start; 
+        padding-right: 5rem; 
+    }
+
+    footer ul {
+        flex: 1; 
+        justify-content: flex-start; 
+    }
+    
+    footer address p:first-of-type {
+        display: block;
+        flex: 1;
+    }
+}
