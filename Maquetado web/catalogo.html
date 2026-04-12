@@ -64,9 +64,9 @@
             >
           </li>
           <li>
-            <a href="iniciarSesion.html" class="nav-link"
-              ><span class="material-symbols-outlined simbolos">login</span
-              >Iniciar Sesión</a
+            <label for="mostrar-login" class="nav-link">
+              <span class="material-symbols-outlined simbolos">login</span
+              >Iniciar Sesión</label
             >
           </li>
           <li>
@@ -88,11 +88,11 @@
             >
           </li>
           <li class="item-carrito-texto">
-            <a href="carrito.html" class="nav-link"
-              ><span class="material-symbols-outlined simbolos"
+            <label for="mostrar-carrito" class="nav-link">
+              <span class="material-symbols-outlined simbolos"
                 >shopping_cart</span
-              >Carrito</a
-            >
+              >Carrito
+            </label>
           </li>
         </ul>
       </nav>
@@ -275,5 +275,94 @@
 
       <p class="footer-copyright"><small>&copy; 2026 PAWPrints</small></p>
     </footer>
+
+    <input type="checkbox" id="mostrar-login" class="login-check" />
+    <label for="mostrar-login" class="fondo-login"></label>
+    <aside class="login-panel">
+      <header class="login-header">
+        <h2>Iniciar Sesión</h2>
+        <label for="mostrar-login" class="login-cerrar">✕</label>
+      </header>
+
+      <form class="login-form">
+        <label for="user">Usuario</label>
+        <input
+          type="text"
+          id="user"
+          placeholder="Ingresá tu usuario"
+          required
+        />
+
+        <label for="pass">Contraseña</label>
+        <input
+          type="password"
+          id="pass"
+          placeholder="Ingresá tu contraseña"
+          required
+        />
+
+        <button type="submit">Iniciar Sesión</button>
+      </form>
+      <p>
+        ¿No tenes cuenta aún?
+        <label for="mostrar-registro" class="registro-link"
+          >Registrate aquí</label
+        >
+      </p>
+    </aside>
+
+    <input type="checkbox" id="mostrar-registro" class="registro-check" />
+    <label for="mostrar-mostrar-registro" class="fondo-registro"></label>
+    <aside class="registro-panel">
+      <header class="registro-header">
+        <h2>Registrarme</h2>
+        <label for="mostrar-registro" class="registro-cerrar">✕</label>
+      </header>
+
+      <form class="registro-form">
+        <label for="name">Nombre Completo</label>
+        <input type="text" id="name" placeholder="Ingresá tu nombre" required />
+
+        <label for="mail">Correo Electrónico</label>
+        <input
+          type="email"
+          id="mail"
+          placeholder="Ingresá tu correo electrónico"
+          required
+        />
+
+        <label for="user">Usuario</label>
+        <input
+          type="text"
+          id="user"
+          placeholder="Ingresá un usuario"
+          required
+        />
+
+        <label for="pass">Contraseña</label>
+        <input
+          type="password"
+          id="pass"
+          placeholder="Ingresá una contraseña"
+          required
+        />
+
+        <button type="submit">Registrarme</button>
+      </form>
+    </aside>
+
+    <input type="checkbox" id="mostrar-carrito" class="carrito-check" />
+    <label for="mostrar-carrito" class="fondo-carrito"></label>
+    <aside class="carrito-panel">
+      <header class="carrito-header">
+        <h2>Carrito de compras</h2>
+        <label for="mostrar-carrito" class="carrito-cerrar">✕</label>
+      </header>
+
+      <p class="carrito-vacio">
+        <span class="material-symbols-outlined simbolos">info</span>
+        El carrito de compras está vacío.
+      </p>
+    </aside>
   </body>
 </html>
