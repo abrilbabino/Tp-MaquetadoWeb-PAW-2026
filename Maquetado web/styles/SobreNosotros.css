@@ -1,85 +1,67 @@
-.sobreNosotrs-contenedor{
-    padding: 2rem 1.5rem;
+.sobreNosotros-contenedor{
     display: flex;
     flex-direction: column;
-}
-
-.sobreNosotros-encabezado {
-    display: grid;
-    grid-template-columns: 1fr 100px; /* Texto ocupa el espacio sobrante, imagen clavada en 100px */
-    gap: 1.5rem;
-    align-items: center;
-    padding-bottom: 2.5rem;
-    border-bottom: 1px solid var(--color-gris-claro, #e5e5e5); /* Línea separadora */
-    margin-bottom: 2rem;
-}
-
-.sobreNosotros-encabezado h1 {
-    font-size: 1.8rem;
-    font-weight: 800;
-    margin-bottom: 0.5rem;
-    line-height: 1.2;
-}
-
-.sobreNosotros-encabezado p {
-    font-size: 0.95rem;
-     
-    margin: 0;
 }
 
 .sobreNosotros-seccion{
     display: grid;
     grid-template-columns: 35% 1fr;
     gap: 1rem;
+    text-align: center;
     align-items: center;
     padding-bottom: 2rem;
-    border-bottom: 1px solid var(--color-gris-claro);
-    margin-bottom: 2rem;
+    border-bottom: 5px solid var(--color-gris-claro);
+    margin-bottom: 2srem;
 }
 
 .sobreNosotros-seccion h2{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 800;
     line-height: 1.3;
 }
 
-.sobreNosotros-contenedor-tarjetas{
+.sobreNosotros-contenedor-tarjeta{
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-.sobreNosotros-tarjetas{
+.sobreNosotros-tarjeta{
     display: grid;
-    grid-template-columns: 80px 1fr;
-    gap: 1rem;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 1.5rem;
     align-items: center;
-    border: 1px solid var(--color-gris-claro);
+    border: 3px solid var(--color-gris-claro);
     border-radius: 8px;
-    padding: 0.8rem;
+    padding: 1.2rem;
     background-color: var(--color-fondo);
 }
 
-.sobreNosotros-tarjetas-cuerpo h3{
-    font-size: 0.95rem;
+.sobreNosotros-tarjeta-cuerpo h3{
+    font-size: 2rem;
     font-weight: 700;
     margin: 0 0 0.4rem 0;
+    font-weight: 800;
+    
 }
 
-.sobreNosotros-tarjetas-cuerpo p{
-    font-size: 0.85rem;
-    margin: 0;
+.sobreNosotros-tarjeta-cuerpo p{
+    font-size: 1.4rem;
     line-height: 1.4;
+    font-weight: 500;
     color: var(--color-texto);
 }
 
-.img-cuadrada{
-    width: 100%;
-    object-fit: cover;
-    background-color: var(--color-gris-claro);
+.img-cuadrada {
+    /*👇 ELIMINAMOS width: 200px; y height: 200px; 👇 */
+    width: 100%; /* Ocupar todo el ancho de su columna */
+    max-width: 350px; /*👇 AGREGAMOS max-width: 150px; 👇 */ /* Evitar que crezca demasiado */
+    aspect-ratio: 1 / 1; /* Forzamos a que siempre sea un cuadrado perfecto */
+    object-fit: cover; /* Recorta la imagen para que no se deforme */
     border-radius: 4px;
 }
 
 .sobreNosotros-etiquetas{
     display: none;
 }
+
