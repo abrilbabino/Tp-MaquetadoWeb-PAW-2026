@@ -190,6 +190,7 @@
     border-radius: 50%;
     transition: background-color 0.2s;
     line-height: 1;
+    border: none;
 }
 
 .carrito-cerrar:hover { background-color: var(--color-gris-claro); }
@@ -336,10 +337,10 @@ main > header p {
     font-size: 1.25rem;
 }
 
-/* DISEÑO PC  */
+/* DISEÑO PC */
 @media screen and (min-width: 994px) { 
     .Barra-navegacion {
-        padding: 0.4rem 0.5rem;
+        padding: 0.4rem 0.2rem;
         flex-wrap: wrap;
         justify-content: space-between; 
         align-items: center;
@@ -379,7 +380,7 @@ main > header p {
         align-items: center;
         border-top: 3px solid var(--color-gris-claro);
         white-space: nowrap; 
-        padding: 2rem 0 1rem 1rem;
+        padding: 2rem 0 1rem 0.2rem;
     }
 
     .nav-link {
@@ -390,9 +391,8 @@ main > header p {
         text-transform: uppercase;
         letter-spacing: 1px;
         color: var(--color-azul);
-        font-size: 1.2rem;
-        text-decoration: none;
-        border-bottom: 3px solid var(--color-gris-claro);  
+        font-size: 1rem;
+        text-decoration: none; 
         padding: 0.5rem 0;
         cursor: pointer;       
     }
