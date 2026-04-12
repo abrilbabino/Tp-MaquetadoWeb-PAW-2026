@@ -196,14 +196,6 @@
 
 /* DISEÑO PC (Más de 768px) */
 @media screen and (min-width: 768px) { 
-    .catalago-main {
-        display: grid;
-        grid-template-columns: 280px 1fr;
-        column-gap: 3rem;
-        align-items: start; 
-    }
-
-    .catalago-main .hero-catalogo,
     .catalago-main .btn-cargar {
         grid-column: 1 / -1;
         margin-bottom: 6rem;
