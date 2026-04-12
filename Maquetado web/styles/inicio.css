@@ -106,7 +106,6 @@
 /* TIENDA FÍSICA (Celular) */
 main > .tienda-fisica {
   padding: 2rem 5%;
-  background-color: var(--color-gris-claro);
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -132,8 +131,8 @@ main > .tienda-fisica address {
   background-color: var(--color-fondo);
   padding: 2rem;
   border-radius: 10px;
+  border: 3px solid var(--color-gris-claro);
   border-left: 5px solid var(--color-verde);
-  box-shadow: 0 1px 1px  var(--color-texto);
   font-style: normal;
   margin-top: 1rem;
 }
