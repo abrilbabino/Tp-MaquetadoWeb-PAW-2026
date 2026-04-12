@@ -17,16 +17,15 @@ header form label { display: none; }
 
 header form {
     display: flex;
-    flex: 1;
+    flex: 1; 
     justify-content: flex-end; 
-    margin-right: 1.5rem;
+    padding: 0.5rem 1rem;
 }
 
 header form input[type="search"] {
     width: 100%;
-    max-width: 280px;
     min-width: 150px; 
-    padding: 0.5rem; 
+    padding: 0.8rem; 
     border: 1.5px solid var(--color-azul); 
     border-radius: 25px; 
     background-image: url('../img/lupa.png'); 
@@ -43,21 +42,63 @@ body > header nav {
     margin-top: 0.2rem; 
 }
 
-nav ul {
+.header-top {
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
+    width: 100%;
+    max-width: 640px;
+    justify-content: space-between;
     align-items: center;
-    gap: auto;  
+}
+
+.header-top figure img { 
+    max-width: 240px; 
+    height: auto; 
+   
+}
+
+.icono-carrito {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: var(--color-azul);
+}
+
+#menu-hamburguesa {
+    display: none;
+}
+
+.label-hamburguesa {
+    display: block;
+    cursor: pointer;
+    padding: 0.5rem;
+    margin-right: 1rem;
+}
+
+.label-hamburguesa img, .icono-carrito img {
+    width: 40px; 
+    height: auto;
+    margin: 0 0.7rem; 
+}
+
+nav ul {
+    display: none;
+    flex-direction: column;
+    gap: 1.5rem;  
+    padding: 1.5rem 2rem;
+    border-top: 3px solid var(--color-violeta);
+}
+
+#menu-hamburguesa:checked ~ ul {
+    display: flex;
 }
 
 nav a {
-    font-weight: 500; 
-    text-transform: capitalize; 
+    font-weight: 1000; 
+    text-transform: uppercase; 
     letter-spacing: 0.35px;
     color: var(--color-azul);
-    white-space: nowrap;   
+    font-size: 1.2rem;
 }
+
 
 /* FOOTER (Celular) */
 footer {
@@ -88,6 +129,7 @@ footer ul {
     gap: 0.8rem;
     justify-content: center;
     margin-left: 1rem;
+
 }
 
 footer p small {
@@ -108,13 +150,11 @@ footer p small {
 
     header form {
         min-width: 350px;
-        max-width: 600px; 
-        margin-left: auto; 
-        margin-right: 2rem; 
+        margin: 0 2.5rem;
         justify-content: flex-end;
     }
 
-    header form input[type="search"] { max-width: 500px; }
+    header form input[type="search"] { width: 100% ;max-width: 800px; }
 
     body > header nav {
         width: auto; 
@@ -122,8 +162,19 @@ footer p small {
         margin-right: 2rem;
     }
 
-    nav ul {
-        flex-wrap: nowrap; 
+    .label-hamburguesa {
+        display: none;
+    }
+
+    .icono-carrito {
+        display: none;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        border-top: none;
+        white-space: nowrap; 
         gap: 2.2rem;
     }
 
@@ -135,22 +186,53 @@ footer p small {
 
     footer {
         flex-wrap: nowrap; 
-        padding: 2rem 5%;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 2rem 3%;
     }
 
     footer address {
         flex: 1; 
-        justify-content: flex-start; 
-        padding-right: 5rem; 
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 0.2rem; 
+        
+    }
+
+    footer address p:first-of-type {
+        display: block;
+        margin-right: auto;
+        flex: none;
+    }
+
+    footer address p:first-of-type a{
+        padding: 0.4rem;
     }
 
     footer ul {
-        flex: 1; 
+        flex: none; 
+        display: flex;
+        gap: 1rem;
+        margin-left:0.5rem; 
         justify-content: flex-start; 
+        
+    }
+
+    footer address p {
+        white-space: nowrap; 
+        margin: 0;
+    }
+    footer > p {
+        flex: 1; /* Funciona como el segundo resorte, igualando la fuerza del primero */
+        text-align: right; /* Alinea el texto contra la esquina derecha */
+        margin: 0;
     }
     
-    footer address p:first-of-type {
-        display: block;
-        flex: 1;
+
+    footer p small {
+        margin-left: 1rem; 
+        white-space: nowrap;
     }
 }
