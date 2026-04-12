@@ -1,5 +1,5 @@
 /* HEADER Y BUSCADOR (Celular) */
-.header-principal {
+.Barra-navegacion {
     display: flex; 
     flex-direction: row;
     flex-wrap: wrap;
@@ -134,6 +134,31 @@
     font-size: 31px;            
 }
 
+/*HERO (Celular) */
+main > header {
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--color-fondo);
+    text-shadow: 2px 2px 5px var(--color-texto);
+    border-bottom: 4px solid var(--color-amarillo);
+    background-color: var(--color-amarillo);
+}
+
+main > header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+}
+
+main > header p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
 /* FOOTER (Celular) */
 .footer-principal {
     background-color: var(--color-fondo);
@@ -221,7 +246,7 @@
 
 /* DISEÑO PC  */
 @media screen and (min-width: 994px) { 
-    .header-principal {
+    .Barra-navegacion {
         padding: 0.4rem 0.5rem;
         flex-wrap: wrap;
         justify-content: space-between; 
@@ -282,6 +307,11 @@
         border: none;
         align-items: center;
         gap: 4px;       
+    }
+
+    /* HERO EN PC  */
+    main > header {
+    min-height: 50vh;
     }
 
     /*  FOOTER EN PC  */
