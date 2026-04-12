@@ -29,6 +29,6 @@ a {
     text-decoration: none;
 }
 
-a:hover, .btn-cargar:hover {
+a:hover, .btn-cargar:hover, .menu-principal label:hover {
     color: var(--color-magenta); 
 }

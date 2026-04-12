@@ -397,7 +397,7 @@ main > header p {
         cursor: pointer;       
     }
 
-    .menu-principal a {
+    .menu-principal a, .menu-principal label {
         display: flex;
         font-weight:800; 
         text-transform: uppercase;
