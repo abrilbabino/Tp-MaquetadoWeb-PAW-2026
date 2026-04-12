@@ -68,7 +68,7 @@
 }
 
 .Formulario button:hover {
-  background-color: var(--color-amarillo);
+  background-color: var(--color-violeta);
   transform: scale(1.05);
 }
 
