@@ -19,9 +19,9 @@
           <img src="img/logo.png" alt="PAWPrints" />
         </figure>
 
-        <a href="carrito.html" class="icono-carrito">
-          <img src="img/carrito-de-compras.png" alt="Ir al carrito" class="icono-header">
-        </a>
+        <label for="mostrar-carrito" class="icono-carrito">
+          <img src="img/carrito-de-compras.png" alt="Abrir carrito" class="icono-header">
+        </label>
       </div>
 
       <form action="/buscar" method="GET" class="header-busqueda">
@@ -45,7 +45,11 @@
           <li><a href="SobreNosotros.html" class="nav-link"><span class="material-symbols-outlined simbolos">groups</span>Sobre Nosotros</a></li>
           <li><a href="catalogo.html" class="nav-link"><span class="material-symbols-outlined simbolos">menu_book</span> Catálogo</a></li>
           <li><a href="formulario.html" class="nav-link"><span class="material-symbols-outlined simbolos">event</span>Reserva</a></li>
-          <li class="item-carrito-texto"><a href="carrito.html" class="nav-link"><span class="material-symbols-outlined simbolos">shopping_cart</span>Carrito</a></li>
+          <li class="item-carrito-texto">
+              <label for="mostrar-carrito" class="nav-link">
+                  <span class="material-symbols-outlined simbolos">shopping_cart</span>Carrito
+              </label>
+          </li>
         </ul>
       </nav>
     </header>
@@ -117,5 +121,19 @@
 
       <p class="footer-copyright"><small>&copy; 2026 PAWPrints</small></p>
     </footer>
+    <input type="checkbox" id="mostrar-carrito" class="carrito-check">
+    <label for="mostrar-carrito" class="fondo-carrito"></label>
+    <aside class="carrito-panel">
+
+      <header class="carrito-header">
+        <h2>Carrito de compras</h2>
+        <label for="mostrar-carrito" class="carrito-cerrar">✕</label>
+      </header>
+
+      <p class="carrito-vacio">
+        <span class="material-symbols-outlined simbolos">info</span> 
+        El carrito de compras está vacío.
+      </p>
+    </aside>
   </body>
 </html>
