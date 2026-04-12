@@ -103,135 +103,144 @@
         <h1>Catálogo de Libros</h1>
         <p>Explorá nuestra extensa colección de libros de diversos géneros.</p>
       </header>
+      <div class="contenido-catalogo">
+        <section>
+          <details class="filtros" open>
+            <summary>
+              <img
+                src="img/FILTRAR.png"
+                alt="Iconos de filtros"
+                class="icono-png"
+              />
+              FILTRAR
+            </summary>
+            <form action="/filtros" method="GET">
+              <p>Género</p>
+              <select id="Genero" name="genero">
+                <option value="" selected disabled>
+                  Seleccioná una opción
+                </option>
+                <option value="Terr">Terror</option>
+                <option value="Fic">Ficción</option>
+                <option value="Rom">Romance</option>
+              </select>
+              <!-- lista desplegable -->
+              <p>Precio</p>
+              <label for="numeroMin">Min</label>
+              <input
+                type="number"
+                id="numeroMin"
+                placeholder="Mín"
+                min="1800"
+                max="900000"
+              />
+              <label for="numeroMax">Max</label>
+              <input
+                type="number"
+                id="numeroMax"
+                placeholder="Máx"
+                min="1800"
+                max="900000"
+              />
+              <button type="button">IR</button>
+              <p>*Min. $1800.00 - Max. $900000.00</p>
+              <p>Editorial</p>
+              <select id="Editorial" name="editorial">
+                <option value="" selected disabled>
+                  Seleccioná una opción
+                </option>
+              </select>
+              <!-- lista desplegable -->
+              <p>Idioma</p>
+              <select id="Idioma" name="idioma">
+                <option value="" selected disabled>
+                  Seleccioná una opción
+                </option>
+                <option value="in">Inglés</option>
+                <option value="es">Español</option>
+                <option value="fr">Francés</option>
+              </select>
+              <!-- lista desplegable -->
+              <p>Autor</p>
+              <select id="Autor" name="autor">
+                <option value="" selected disabled>
+                  Seleccioná una opción
+                </option>
+              </select>
+              <!-- lista desplegable -->
+            </form>
+          </details>
+        </section>
+        <section class="grilla-libros">
+          <article>
+            <img src="img/portada-libro1.png" alt="Portada del libro 1" />
+            <p><strong>Título del Libro 1</strong></p>
+            <p><em>Autor:</em> Nombre del Autor 1</p>
+            <p><em>Precio:</em> $19.99</p>
+            <div class="overlay">
+              <p>Breve descripción</p>
+              <a href="detalleLibro.html">Ver más</a>
+            </div>
+          </article>
 
-      <section>
-        <details class="filtros" open>
-          <summary>
-            <img
-              src="img/FILTRAR.png"
-              alt="Iconos de filtros"
-              class="icono-png"
-            />
-            FILTRAR
-          </summary>
-          <form action="/filtros" method="GET">
-            <p>Género</p>
-            <select id="Genero" name="genero">
-              <option value="" selected disabled>Seleccioná una opción</option>
-              <option value="Terr">Terror</option>
-              <option value="Fic">Ficción</option>
-              <option value="Rom">Romance</option>
-            </select>
-            <!-- lista desplegable -->
-            <p>Precio</p>
-            <label for="numeroMin">Min</label>
-            <input
-              type="number"
-              id="numeroMin"
-              placeholder="Mín"
-              min="1800"
-              max="900000"
-            />
-            <label for="numeroMax">Max</label>
-            <input
-              type="number"
-              id="numeroMax"
-              placeholder="Máx"
-              min="1800"
-              max="900000"
-            />
-            <button type="button">IR</button>
-            <p>*Min. $1800.00 - Max. $900000.00</p>
-            <p>Editorial</p>
-            <select id="Editorial" name="editorial">
-              <option value="" selected disabled>Seleccioná una opción</option>
-            </select>
-            <!-- lista desplegable -->
-            <p>Idioma</p>
-            <select id="Idioma" name="idioma">
-              <option value="" selected disabled>Seleccioná una opción</option>
-              <option value="in">Inglés</option>
-              <option value="es">Español</option>
-              <option value="fr">Francés</option>
-            </select>
-            <!-- lista desplegable -->
-            <p>Autor</p>
-            <select id="Autor" name="autor">
-              <option value="" selected disabled>Seleccioná una opción</option>
-            </select>
-            <!-- lista desplegable -->
-          </form>
-        </details>
-      </section>
-      <section class="grilla-libros">
-        <article>
-          <img src="img/portada-libro1.png" alt="Portada del libro 1" />
-          <p><strong>Título del Libro 1</strong></p>
-          <p><em>Autor:</em> Nombre del Autor 1</p>
-          <p><em>Precio:</em> $19.99</p>
-          <div class="overlay">
-            <p>Breve descripción</p>
-            <a href="detalleLibro.html">Ver más</a>
-          </div>
-        </article>
+          <article>
+            <img src="portada-libro2" alt="Portada del libro 2" />
+            <p><strong>Título del Libro 2</strong></p>
+            <p><em>Autor:</em> Nombre del Autor 2</p>
+            <p><em>Precio:</em> $15.99</p>
+            <div class="overlay">
+              <p>Breve descripción</p>
+              <a href="detalleLibro.html">Ver más</a>
+            </div>
+          </article>
 
-        <article>
-          <img src="portada-libro2" alt="Portada del libro 2" />
-          <p><strong>Título del Libro 2</strong></p>
-          <p><em>Autor:</em> Nombre del Autor 2</p>
-          <p><em>Precio:</em> $15.99</p>
-          <div class="overlay">
-            <p>Breve descripción</p>
-            <a href="detalleLibro.html">Ver más</a>
-          </div>
-        </article>
+          <article>
+            <img src="portada-libro3" alt="Portada del libro 3" />
+            <p><strong>Título del Libro 3</strong></p>
+            <p><em>Autor:</em> Nombre del Autor 3</p>
+            <p><em>Precio:</em> $15.99</p>
+            <div class="overlay">
+              <p>Breve descripción</p>
+              <a href="detalleLibro.html">Ver más</a>
+            </div>
+          </article>
 
-        <article>
-          <img src="portada-libro3" alt="Portada del libro 3" />
-          <p><strong>Título del Libro 3</strong></p>
-          <p><em>Autor:</em> Nombre del Autor 3</p>
-          <p><em>Precio:</em> $15.99</p>
-          <div class="overlay">
-            <p>Breve descripción</p>
-            <a href="detalleLibro.html">Ver más</a>
-          </div>
-        </article>
+          <article>
+            <img src="portada-libro4" alt="Portada del libro 4" />
+            <p><strong>Título del Libro 4</strong></p>
+            <p><em>Autor:</em> Nombre del Autor 4</p>
+            <p><em>Precio:</em> $15.99</p>
+            <div class="overlay">
+              <p>Breve descripción</p>
+              <a href="detalleLibro.html">Ver más</a>
+            </div>
+          </article>
 
-        <article>
-          <img src="portada-libro4" alt="Portada del libro 4" />
-          <p><strong>Título del Libro 4</strong></p>
-          <p><em>Autor:</em> Nombre del Autor 4</p>
-          <p><em>Precio:</em> $15.99</p>
-          <div class="overlay">
-            <p>Breve descripción</p>
-            <a href="detalleLibro.html">Ver más</a>
-          </div>
-        </article>
+          <article>
+            <img src="portada-libro5" alt="Portada del libro 5" />
+            <p><strong>Título del Libro 5</strong></p>
+            <p><em>Autor:</em> Nombre del Autor 5</p>
+            <p><em>Precio:</em> $15.99</p>
+            <div class="overlay">
+              <p>Breve descripción</p>
+              <a href="detalleLibro.html">Ver más</a>
+            </div>
+          </article>
 
-        <article>
-          <img src="portada-libro5" alt="Portada del libro 5" />
-          <p><strong>Título del Libro 5</strong></p>
-          <p><em>Autor:</em> Nombre del Autor 5</p>
-          <p><em>Precio:</em> $15.99</p>
-          <div class="overlay">
-            <p>Breve descripción</p>
-            <a href="detalleLibro.html">Ver más</a>
-          </div>
-        </article>
+          <article>
+            <img src="portada-libro6" alt="Portada del libro 6" />
+            <p><strong>Título del Libro 6</strong></p>
+            <p><em>Autor:</em> Nombre del Autor 6</p>
+            <p><em>Precio:</em> $15.99</p>
+            <div class="overlay">
+              <p>Breve descripción</p>
+              <a href="detalleLibro.html">Ver más</a>
+            </div>
+          </article>
 
-        <article>
-          <img src="portada-libro6" alt="Portada del libro 6" />
-          <p><strong>Título del Libro 6</strong></p>
-          <p><em>Autor:</em> Nombre del Autor 6</p>
-          <p><em>Precio:</em> $15.99</p>
-          <div class="overlay">
-            <p>Breve descripción</p>
-            <a href="detalleLibro.html">Ver más</a>
-          </div>
-        </article>
-
-        <button type="button" class="btn-cargar">Cargar Más</button>
-      </section>
+          <button type="button" class="btn-cargar">Cargar Más</button>
+        </section>
+      </div>
     </main>
 
     <footer class="footer-principal">

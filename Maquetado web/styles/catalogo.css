@@ -27,7 +27,7 @@
     transform 0.3s ease,
     box-shadow 0.3s ease;
   background-color: var(--color-fondo);
-  text-align: center;
+  text-align: left;
 }
 
 .grilla-libros article:hover {
@@ -226,51 +226,48 @@
 
 /* DISEÑO PC (Más de 768px) */
 @media screen and (min-width: 994px) {
-  .catalago-main {
-    display: grid;
-    grid-template-columns: 300px 1fr; /* izquierda filtros, derecha grilla */
-    grid-template-areas:
-      "hero hero"
-      "filtros grilla";
-    gap: 1rem;
+  .contenido-catalogo {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 1rem 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
   }
-  .hero-catalogo {
-    grid-area: hero;
-  }
-  .filtros {
-    grid-area: filtros;
-  }
-  .grilla-libros {
-    grid-area: grilla;
+  /* El section que envuelve los filtros */
+  .contenido-catalogo > section:first-of-type {
+    flex-shrink: 0;
+    width: 260px;
+    position: sticky;
+    top: 1rem;
   }
 
   .filtros summary {
     display: none;
-  } /* ocultamos el botón FILTRAR */
+  }
+
   .filtros form {
     display: block;
-  } /* mostramos el formulario siempre */
+  }
 
   /* Grilla de libros */
   .grilla-libros {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    flex: 1;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     gap: 2rem;
-    justify-items: center;
-    max-width: 1200px; /* evita que se pasen de 3 columnas */
-    margin: 0 auto;
+    padding: 0;
+    max-width: none;
+    margin: 0;
   }
 
-  /* Botón Cargar Más */
   .btn-cargar {
     grid-column: 1 / -1;
     justify-self: center;
     margin: 3rem 0 6rem 0;
   }
 
-  /* Inputs de precio más compactos */
   .filtros form input[type="number"] {
-    max-width: 800px;
+    max-width: 80px;
   }
   .filtros form button {
     margin-left: 0.2rem;
@@ -278,7 +275,6 @@
   }
 
   .grilla-libros article p:nth-of-type(3) {
-    /* precio */
     font-size: 0.9rem;
     font-weight: 700;
   }
