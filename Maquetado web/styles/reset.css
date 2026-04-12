@@ -47,3 +47,11 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/* Elimina la 'x' y la decoración por defecto en los buscadores (Chrome/Safari/Edge) */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    -webkit-appearance: none;
+}
