@@ -101,8 +101,11 @@
     <main>
       <section class="detalle-libro">
         <figure>
-          <img src="portadaLibro.png" alt="Portada del Libro" />
-          <figcaption><h2>Título del Libro</h2></figcaption>
+          <img src="img/portada-libro1.png" alt="Portada del Libro" />
+          <figcaption>
+            <h2>Título del Libro</h2>
+            <span class="stock-mobile">Stock Disponible</span>
+          </figcaption>
         </figure>
 
         <article class="descripcion-libro">
@@ -114,12 +117,11 @@
 
         <section class="compra-reserva">
           <p><strong>$19.99</strong></p>
-          <span>Stock Disponible</span>
-
-          <form action="/agregar-carrito" method="POST">
+          <span class="stock-desktop">Stock Disponible</span>
+          <form class="boton-agregarCarrito" action="/agregar-carrito" method="POST">
             <button type="submit">Agregar al Carrito</button>
           </form>
-          <form action="formulario.html" method="GET">
+          <form class="boton-reservar" action="formulario.html" method="GET">
             <button type="button">Reservar Gratis</button>
           </form>
         </section>
@@ -127,7 +129,7 @@
 
       <section class="descripcion-autor">
         <figure>
-          <img src="imagenAutor.png" alt="Fotografía del autor" />
+          <img src="img/autorLibro.png" alt="Fotografía del autor" />
         </figure>
 
         <article>
@@ -142,29 +144,53 @@
         <section class="carrusel">
           <article class="libro-relacionado">
             <img
-              src="portada-LibroRelacionado1.jpg"
-              alt="Portada libro relacionado 1"
+               src="img/portada-libro2.png"
+               alt="Portada del 'el pingüino aventurero'"
             />
-            <p><strong>Título del Libro 1</strong></p>
-            <p><em>$19.99</em></p>
+            <p class="titulo"><strong>El pingüino Aventurero</strong></p>
+            <p class="autor"><em>Autor:</em> Julia Navarro</p>
+            <p class="precio"><em>Precio:</em> $15.99</p>
+            <div class="overlay">
+              <p>Breve descripción</p>
+              <a href="detalleLibro.html">Ver más</a>
+            </div>
+            <button class="btn-add-carrito">
+              <span class="material-symbols-outlined">add_circle</span>
+            </button>
           </article>
 
           <article class="libro-relacionado">
             <img
-              src="portada-LibroRelacionado2.jpg"
-              alt="Portada libro relacionado 2"
+              src="img/portada-libro3.png"
+              alt="Portada del libro 'en la sombra del espejo'"
             />
-            <p><strong>Título del Libro 2</strong></p>
-            <p><em>$19.99</em></p>
+            <p class="titulo"><strong>En la Sombra del Espejo</strong></p>
+            <p class="autor"><em>Autor:</em> Julia Navarro</p>
+            <p class="precio"><em>Precio:</em> $15.99</p>
+            <div class="overlay">
+              <p>Breve descripción</p>
+              <a href="detalleLibro.html">Ver más</a>
+            </div>
+            <button class="btn-add-carrito">
+              <span class="material-symbols-outlined">add_circle</span>
+            </button>
           </article>
 
           <article class="libro-relacionado">
             <img
-              src="portada-LibroRelacionado3.jpg"
-              alt="Portada libro relacionado 3"
+              src="img/portada-libro4.png"
+              alt="Portada del libro 'bajo el cielo de paris'"
             />
-            <p><strong>Título del Libro 3</strong></p>
-            <p><em>$19.99</em></p>
+            <p class="titulo"><strong>Bajo el Cielo de Paris</strong></p>
+            <p class="autor"><em>Autor:</em> Laura Martínez</p>
+            <p class="precio"><em>Precio:</em> $15.99</p>
+            <div class="overlay">
+              <p>Breve descripción</p>
+              <a href="detalleLibro.html">Ver más</a>
+            </div>
+            <button class="btn-add-carrito">
+              <span class="material-symbols-outlined">add_circle</span>
+            </button>
           </article>
         </section>
       </section>
