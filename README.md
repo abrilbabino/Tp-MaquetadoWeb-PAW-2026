@@ -11,4 +11,4 @@ En la **primer entrega** se abordan las siguientes tareas:
 - Maquetado en HTML5 siguiendo las pautas de los wireframes, aplicando correctamente etiquetas semánticas.
 
 Respecto a la **segunda entrega** podemos encontrar en el repositorio:
--El contenido CSS necesario para lograr que el maquetado se vea tal como diseñamos los Wireframes.
+- El contenido CSS necesario para lograr que el maquetado se vea tal como diseñamos los Wireframes.
