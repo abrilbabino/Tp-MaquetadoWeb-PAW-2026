@@ -198,6 +198,10 @@
   visibility: visible;
 }
 
+.registro-check:checked ~ .login-panel {
+  display: none;
+}
+
 /* --- ESTILOS INTERNOS DEL FORM --- */
 
 .login-header,
