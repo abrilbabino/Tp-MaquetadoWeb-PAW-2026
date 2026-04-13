@@ -228,11 +228,27 @@
   gap: 0.8rem;
 }
 
+.campo-contraseña {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
 .login-form input,
 .registro-form input {
+  width: 100%;
   padding: 0.8rem;
+  padding-right: 45px;
   border: 1px solid var(--color-azul);
   border-radius: 5px;
+}
+
+.mostrar-contraseña {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  color: var(--color-azul);
 }
 
 .login-form button,
