@@ -89,7 +89,7 @@
   z-index: 2; /* ← queda por encima del overlay */
 }
 
-/* BREVE DESCRIPCION */
+/*BOTON VER MAS*/
 .grilla-libros .overlay {
   z-index: 1;
   position: absolute;
@@ -97,42 +97,18 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: color-mix(in srgb, var(--color-amarillo), transparent);
-  color: var(--color-fondo);
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   opacity: 0;
   transition: opacity 0.3s ease;
 }
-
-.grilla-libros article:hover .overlay {
-  opacity: 1;
-}
-
-/*BOTON VER MAS*/
-.grilla-libros .overlay a {
-  background: var(--color-magenta);
-  border-radius: 20px;
-  padding: 0.5rem 1rem;
-  font-weight: 700;
-  text-decoration: none;
-  color: var(--color-fondo);
-  transition:
-    background-color 0.3s,
-    transform 0.3s;
-  margin-top: 1rem;
-}
 .grilla-libros .overlay p {
-  font-weight: 700;
-  color: var(--color-fondo);
+  display: none;
 }
-
-.grilla-libros .overlay a:hover {
-  background: var(--color-violeta);
-  transform: scale(1.05);
+.grilla-libros .overlay a {
+  border-radius: 20px;
+  font-weight: 700;
+  width: 100%;
+  font-display: none;
 }
 
 /*BOTON CARGAR MAS*/
@@ -274,6 +250,48 @@
   .grilla-libros article {
     width: 100%;
     aspect-ratio: 160 / 220;
+  }
+
+  /* BREVE DESCRIPCION */
+  .grilla-libros .overlay {
+    background: color-mix(in srgb, var(--color-amarillo), transparent);
+    color: var(--color-fondo);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 1rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .grilla-libros article:hover .overlay {
+    opacity: 1;
+  }
+
+  /*BOTON VER MAS*/
+  .grilla-libros .overlay a {
+    background: var(--color-magenta);
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--color-fondo);
+    transition:
+      background-color 0.3s,
+      transform 0.3s;
+    margin-top: 1rem;
+  }
+  .grilla-libros .overlay p {
+    display: block;
+    font-weight: 700;
+    color: var(--color-fondo);
+  }
+
+  .grilla-libros .overlay a:hover {
+    background: var(--color-violeta);
+    transform: scale(1.05);
   }
 
   .btn-cargar {
