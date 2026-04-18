@@ -7,7 +7,8 @@
   align-items: center;
   border-bottom: 4px solid var(--color-amarillo);
   background-color: var(--color-fondo);
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
   z-index: 1000;
 }
@@ -298,7 +299,6 @@
   flex-direction: column;
   gap: 1.5rem;
   padding: 2rem 1.5rem;
-  box-shadow: -4px 0 20px var(--color-texto);
   transform: translateX(100%);
   transition: transform 0.35s ease;
 }
@@ -308,6 +308,7 @@
 }
 .carrito-check:checked ~ .carrito-panel {
   transform: translateX(0);
+  box-shadow: -4px 0 20px var(--color-texto);
 }
 
 .carrito-header {

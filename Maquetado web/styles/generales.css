@@ -13,10 +13,13 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   background-color: var(--color-fondo);
   color: var(--color-texto);
   font-family: var(--fuente-cuerpo);
   font-size: 1rem;
+  padding-top: 8rem;
 }
 
 h1,
@@ -38,4 +41,10 @@ a:hover,
 .btn-cargar:hover,
 .menu-principal label:hover {
   color: var(--color-magenta);
+}
+
+@media screen and (min-width: 994px) {
+  body {
+    padding-top: 11rem;
+  }
 }
