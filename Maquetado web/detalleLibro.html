@@ -13,27 +13,25 @@
   </head>
   <body>
     <header class="Barra-navegacion">
-      <div class="header-top">
-        <label for="menu-hamburguesa" class="label-hamburguesa">
-          <img
-            src="img/menu-hamburguesa.png"
-            alt="Abrir menú"
-            class="icono-header"
-          />
-        </label>
+      <label for="menu-hamburguesa" class="label-hamburguesa">
+        <img
+          src="img/menu-hamburguesa.png"
+          alt="Abrir menú"
+          class="icono-header"
+        />
+      </label>
 
-        <figure class="header-logo">
-          <img src="img/logo.png" alt="PAWPrints" />
-        </figure>
+      <figure class="header-logo">
+        <img src="img/logo.png" alt="PAWPrints" />
+      </figure>
 
-        <label for="mostrar-carrito" class="icono-carrito">
-          <img
-            src="img/carrito-de-compras.png"
-            alt="Abrir carrito"
-            class="icono-header"
-          />
-        </label>
-      </div>
+      <label for="mostrar-carrito" class="icono-carrito">
+        <img
+          src="img/carrito-de-compras.png"
+          alt="Abrir carrito"
+          class="icono-header"
+        />
+      </label>
 
       <form action="/buscar" method="GET" class="header-busqueda">
         <label for="busqueda" class="busqueda-label"
@@ -118,7 +116,11 @@
         <section class="compra-reserva">
           <p><strong>$19.99</strong></p>
           <span class="stock-desktop">Stock Disponible</span>
-          <form class="boton-agregarCarrito" action="/agregar-carrito" method="POST">
+          <form
+            class="boton-agregarCarrito"
+            action="/agregar-carrito"
+            method="POST"
+          >
             <button type="submit">Agregar al Carrito</button>
           </form>
           <form class="boton-reservar" action="formulario.html" method="GET">
@@ -144,8 +146,8 @@
         <section class="carrusel">
           <article class="libro-relacionado">
             <img
-               src="img/portada-libro2.png"
-               alt="Portada del 'el pingüino aventurero'"
+              src="img/portada-libro2.png"
+              alt="Portada del 'el pingüino aventurero'"
             />
             <p class="titulo"><strong>El pingüino Aventurero</strong></p>
             <p class="autor"><em>Autor:</em> Julia Navarro</p>
@@ -201,29 +203,27 @@
         <p class="footer-email">
           Email: <a href="mailto:info@pawprints.com">info@pawprints.com</a>
         </p>
-        <div class="footer-redes">
-          <p>Seguinos en nuestras redes:</p>
-          <ul class="footer-redes-lista">
-            <li>
-              <a href="https://facebook.com" class="icono-red">
-                <span class="texto-red">Facebook</span
-                ><img src="img/facebook.png" alt="Facebook" class="img-red"
-              /></a>
-            </li>
-            <li>
-              <a href="https://twitter.com" class="icono-red"
-                ><span class="texto-red">Twitter</span
-                ><img src="img/twitter.png" alt="Twitter" class="img-red"
-              /></a>
-            </li>
-            <li>
-              <a href="https://instagram.com" class="icono-red"
-                ><span class="texto-red">Instagram</span
-                ><img src="img/instagram.png" alt="Instagram" class="img-red"
-              /></a>
-            </li>
-          </ul>
-        </div>
+        <p>Seguinos en nuestras redes:</p>
+        <ul class="footer-redes-lista">
+          <li>
+            <a href="https://facebook.com" class="icono-red">
+              <span class="texto-red">Facebook</span
+              ><img src="img/facebook.png" alt="Facebook" class="img-red"
+            /></a>
+          </li>
+          <li>
+            <a href="https://twitter.com" class="icono-red"
+              ><span class="texto-red">Twitter</span
+              ><img src="img/twitter.png" alt="Twitter" class="img-red"
+            /></a>
+          </li>
+          <li>
+            <a href="https://instagram.com" class="icono-red"
+              ><span class="texto-red">Instagram</span
+              ><img src="img/instagram.png" alt="Instagram" class="img-red"
+            /></a>
+          </li>
+        </ul>
       </address>
 
       <p class="footer-copyright"><small>&copy; 2026 PAWPrints</small></p>

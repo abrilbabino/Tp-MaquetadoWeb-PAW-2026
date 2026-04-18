@@ -13,27 +13,25 @@
   </head>
   <body>
     <header class="Barra-navegacion">
-      <div class="header-top">
-        <label for="menu-hamburguesa" class="label-hamburguesa">
-          <img
-            src="img/menu-hamburguesa.png"
-            alt="Abrir menú"
-            class="icono-header"
-          />
-        </label>
+      <label for="menu-hamburguesa" class="label-hamburguesa">
+        <img
+          src="img/menu-hamburguesa.png"
+          alt="Abrir menú"
+          class="icono-header"
+        />
+      </label>
 
-        <figure class="header-logo">
-          <img src="img/logo.png" alt="PAWPrints" />
-        </figure>
+      <figure class="header-logo">
+        <img src="img/logo.png" alt="PAWPrints" />
+      </figure>
 
-        <label for="mostrar-carrito" class="icono-carrito">
-          <img
-            src="img/carrito-de-compras.png"
-            alt="Abrir carrito"
-            class="icono-header"
-          />
-        </label>
-      </div>
+      <label for="mostrar-carrito" class="icono-carrito">
+        <img
+          src="img/carrito-de-compras.png"
+          alt="Abrir carrito"
+          class="icono-header"
+        />
+      </label>
 
       <form action="/buscar" method="GET" class="header-busqueda">
         <label for="busqueda" class="busqueda-label"
@@ -98,188 +96,177 @@
       </nav>
     </header>
 
-    <main class="catalago-main">
+    <main class="catalogo-main">
       <header class="hero-catalogo">
         <h1>Catálogo de Libros</h1>
         <p>Explorá nuestra extensa colección de libros de diversos géneros.</p>
       </header>
-      <div class="contenido-catalogo">
-        <section>
-          <details class="filtros" open>
-            <summary>
-              <img
-                src="img/FILTRAR.png"
-                alt="Iconos de filtros"
-                class="icono-png"
-              />
-              FILTRAR
-            </summary>
-            <form action="/filtros" method="GET">
-              <p>Género</p>
-              <select id="Genero" name="genero">
-                <option value="" selected disabled>
-                  Seleccioná una opción
-                </option>
-                <option value="Terr">Terror</option>
-                <option value="Fic">Ficción</option>
-                <option value="Rom">Romance</option>
-              </select>
-              <!-- lista desplegable -->
-              <p>Precio</p>
-              <label for="numeroMin">Min</label>
-              <input
-                type="number"
-                id="numeroMin"
-                placeholder="Mín"
-                min="1800"
-                max="900000"
-              />
-              <label for="numeroMax">Max</label>
-              <input
-                type="number"
-                id="numeroMax"
-                placeholder="Máx"
-                min="1800"
-                max="900000"
-              />
-              <button type="button">IR</button>
-              <p>*Min. $1800.00 - Max. $900000.00</p>
-              <p>Editorial</p>
-              <select id="Editorial" name="editorial">
-                <option value="" selected disabled>
-                  Seleccioná una opción
-                </option>
-              </select>
-              <!-- lista desplegable -->
-              <p>Idioma</p>
-              <select id="Idioma" name="idioma">
-                <option value="" selected disabled>
-                  Seleccioná una opción
-                </option>
-                <option value="in">Inglés</option>
-                <option value="es">Español</option>
-                <option value="fr">Francés</option>
-              </select>
-              <!-- lista desplegable -->
-              <p>Autor</p>
-              <select id="Autor" name="autor">
-                <option value="" selected disabled>
-                  Seleccioná una opción
-                </option>
-              </select>
-              <!-- lista desplegable -->
-            </form>
-          </details>
-        </section>
-        <section class="grilla-libros">
-          <article>
+      <section class="seccion-filtros">
+        <details class="filtros" open>
+          <summary>
             <img
-              src="img/portada-libro1.png"
-              alt="Portada del libro 'en el camino de la estrella'"
+              src="img/FILTRAR.png"
+              alt="Iconos de filtros"
+              class="icono-png"
             />
-            <p><strong>El Camino de la Estrella</strong></p>
-            <p><em>Autor:</em> Isabel Allende</p>
-            <p><em>Precio:</em> $19.99</p>
-            <div class="overlay">
-              <p>
-                Alex viaja por un sendero mágico hacia un lugar que cumple
-                deseos.
-              </p>
-              <a href="detalleLibro.html">Ver más</a>
-            </div>
-            <button class="btn-add-carrito">
-              <span class="material-symbols-outlined">add_circle</span>
-            </button>
-          </article>
-
-          <article>
-            <img
-              src="img/portada-libro2.png"
-              alt="Portada del 'el pingüino aventurero'"
+            FILTRAR
+          </summary>
+          <form action="/filtros" method="GET">
+            <p>Género</p>
+            <select id="Genero" name="genero">
+              <option value="" selected disabled>Seleccioná una opción</option>
+              <option value="Terr">Terror</option>
+              <option value="Fic">Ficción</option>
+              <option value="Rom">Romance</option>
+            </select>
+            <!-- lista desplegable -->
+            <p>Precio</p>
+            <label for="numeroMin">Min</label>
+            <input
+              type="number"
+              id="numeroMin"
+              placeholder="Mín"
+              min="1800"
+              max="900000"
             />
-            <p><strong>El pingüino Aventurero</strong></p>
-            <p><em>Autor:</em> Julia Navarro</p>
-            <p><em>Precio:</em> $15.99</p>
-            <div class="overlay">
-              <p>Breve descripción</p>
-              <a href="detalleLibro.html">Ver más</a>
-            </div>
-            <button class="btn-add-carrito">
-              <span class="material-symbols-outlined">add_circle</span>
-            </button>
-          </article>
-
-          <article>
-            <img
-              src="img/portada-libro3.png"
-              alt="Portada del libro 'en la sombra del espejo'"
+            <label for="numeroMax">Max</label>
+            <input
+              type="number"
+              id="numeroMax"
+              placeholder="Máx"
+              min="1800"
+              max="900000"
             />
-            <p><strong>En la Sombra del Espejo</strong></p>
-            <p><em>Autor:</em>Julia Navarro</p>
-            <p><em>Precio:</em> $15.99</p>
-            <div class="overlay">
-              <p>Breve descripción</p>
-              <a href="detalleLibro.html">Ver más</a>
-            </div>
-            <button class="btn-add-carrito">
-              <span class="material-symbols-outlined">add_circle</span>
-            </button>
-          </article>
+            <button type="button">IR</button>
+            <p>*Min. $1800.00 - Max. $900000.00</p>
+            <p>Editorial</p>
+            <select id="Editorial" name="editorial">
+              <option value="" selected disabled>Seleccioná una opción</option>
+            </select>
+            <!-- lista desplegable -->
+            <p>Idioma</p>
+            <select id="Idioma" name="idioma">
+              <option value="" selected disabled>Seleccioná una opción</option>
+              <option value="in">Inglés</option>
+              <option value="es">Español</option>
+              <option value="fr">Francés</option>
+            </select>
+            <!-- lista desplegable -->
+            <p>Autor</p>
+            <select id="Autor" name="autor">
+              <option value="" selected disabled>Seleccioná una opción</option>
+            </select>
+            <!-- lista desplegable -->
+          </form>
+        </details>
+      </section>
+      <section class="grilla-libros">
+        <article>
+          <img
+            src="img/portada-libro1.png"
+            alt="Portada del libro 'en el camino de la estrella'"
+          />
+          <p><strong>El Camino de la Estrella</strong></p>
+          <p><em>Autor:</em> Isabel Allende</p>
+          <p><em>Precio:</em> $19.99</p>
+          <div class="overlay">
+            <p>
+              Alex viaja por un sendero mágico hacia un lugar que cumple deseos.
+            </p>
+            <a href="detalleLibro.html">Ver más</a>
+          </div>
+          <button class="btn-add-carrito">
+            <span class="material-symbols-outlined">add_circle</span>
+          </button>
+        </article>
 
-          <article>
-            <img
-              src="img/portada-libro4.png"
-              alt="Portada del libro 'bajo el cielo de paris'"
-            />
-            <p><strong>Bajo el Cielo de Paris</strong></p>
-            <p><em>Autor:</em> Laura Martínez</p>
-            <p><em>Precio:</em> $15.99</p>
-            <div class="overlay">
-              <p>Breve descripción</p>
-              <a href="detalleLibro.html">Ver más</a>
-            </div>
-            <button class="btn-add-carrito">
-              <span class="material-symbols-outlined">add_circle</span>
-            </button>
-          </article>
+        <article>
+          <img
+            src="img/portada-libro2.png"
+            alt="Portada del 'el pingüino aventurero'"
+          />
+          <p><strong>El pingüino Aventurero</strong></p>
+          <p><em>Autor:</em> Julia Navarro</p>
+          <p><em>Precio:</em> $15.99</p>
+          <div class="overlay">
+            <p>Breve descripción</p>
+            <a href="detalleLibro.html">Ver más</a>
+          </div>
+          <button class="btn-add-carrito">
+            <span class="material-symbols-outlined">add_circle</span>
+          </button>
+        </article>
 
-          <article>
-            <img
-              src="img/portada-libro5.png"
-              alt="Portada del libro 'el secreo del castillo encantado'"
-            />
-            <p><strong>El Secreto del Castillo Encantado</strong></p>
-            <p><em>Autor:</em>Ana Fernandez</p>
-            <p><em>Precio:</em> $15.99</p>
-            <div class="overlay">
-              <p>Breve descripción</p>
-              <a href="detalleLibro.html">Ver más</a>
-            </div>
-            <button class="btn-add-carrito">
-              <span class="material-symbols-outlined">add_circle</span>
-            </button>
-          </article>
+        <article>
+          <img
+            src="img/portada-libro3.png"
+            alt="Portada del libro 'en la sombra del espejo'"
+          />
+          <p><strong>En la Sombra del Espejo</strong></p>
+          <p><em>Autor:</em>Julia Navarro</p>
+          <p><em>Precio:</em> $15.99</p>
+          <div class="overlay">
+            <p>Breve descripción</p>
+            <a href="detalleLibro.html">Ver más</a>
+          </div>
+          <button class="btn-add-carrito">
+            <span class="material-symbols-outlined">add_circle</span>
+          </button>
+        </article>
 
-          <article>
-            <img
-              src="img/portada-libro6.png"
-              alt="Portada del libro 'La pandilla de la selva'"
-            />
-            <p><strong>La Pandilla de la Selva</strong></p>
-            <p><em>Autor:</em>Ana Pernandez</p>
-            <p><em>Precio:</em> $15.99</p>
-            <div class="overlay">
-              <p>Breve descripción</p>
-              <a href="detalleLibro.html">Ver más</a>
-            </div>
-            <button class="btn-add-carrito">
-              <span class="material-symbols-outlined">add_circle</span>
-            </button>
-          </article>
+        <article>
+          <img
+            src="img/portada-libro4.png"
+            alt="Portada del libro 'bajo el cielo de paris'"
+          />
+          <p><strong>Bajo el Cielo de Paris</strong></p>
+          <p><em>Autor:</em> Laura Martínez</p>
+          <p><em>Precio:</em> $15.99</p>
+          <div class="overlay">
+            <p>Breve descripción</p>
+            <a href="detalleLibro.html">Ver más</a>
+          </div>
+          <button class="btn-add-carrito">
+            <span class="material-symbols-outlined">add_circle</span>
+          </button>
+        </article>
 
-          <button type="button" class="btn-cargar">Cargar Más</button>
-        </section>
-      </div>
+        <article>
+          <img
+            src="img/portada-libro5.png"
+            alt="Portada del libro 'el secreo del castillo encantado'"
+          />
+          <p><strong>El Secreto del Castillo Encantado</strong></p>
+          <p><em>Autor:</em>Ana Fernandez</p>
+          <p><em>Precio:</em> $15.99</p>
+          <div class="overlay">
+            <p>Breve descripción</p>
+            <a href="detalleLibro.html">Ver más</a>
+          </div>
+          <button class="btn-add-carrito">
+            <span class="material-symbols-outlined">add_circle</span>
+          </button>
+        </article>
+
+        <article>
+          <img
+            src="img/portada-libro6.png"
+            alt="Portada del libro 'La pandilla de la selva'"
+          />
+          <p><strong>La Pandilla de la Selva</strong></p>
+          <p><em>Autor:</em>Ana Pernandez</p>
+          <p><em>Precio:</em> $15.99</p>
+          <div class="overlay">
+            <p>Breve descripción</p>
+            <a href="detalleLibro.html">Ver más</a>
+          </div>
+          <button class="btn-add-carrito">
+            <span class="material-symbols-outlined">add_circle</span>
+          </button>
+        </article>
+
+        <button type="button" class="btn-cargar">Cargar Más</button>
+      </section>
     </main>
 
     <footer class="footer-principal">
@@ -287,29 +274,27 @@
         <p class="footer-email">
           Email: <a href="mailto:info@pawprints.com">info@pawprints.com</a>
         </p>
-        <div class="footer-redes">
-          <p>Seguinos en nuestras redes:</p>
-          <ul class="footer-redes-lista">
-            <li>
-              <a href="https://facebook.com" class="icono-red">
-                <span class="texto-red">Facebook</span
-                ><img src="img/facebook.png" alt="Facebook" class="img-red"
-              /></a>
-            </li>
-            <li>
-              <a href="https://twitter.com" class="icono-red"
-                ><span class="texto-red">Twitter</span
-                ><img src="img/twitter.png" alt="Twitter" class="img-red"
-              /></a>
-            </li>
-            <li>
-              <a href="https://instagram.com" class="icono-red"
-                ><span class="texto-red">Instagram</span
-                ><img src="img/instagram.png" alt="Instagram" class="img-red"
-              /></a>
-            </li>
-          </ul>
-        </div>
+        <p>Seguinos en nuestras redes:</p>
+        <ul class="footer-redes-lista">
+          <li>
+            <a href="https://facebook.com" class="icono-red">
+              <span class="texto-red">Facebook</span
+              ><img src="img/facebook.png" alt="Facebook" class="img-red"
+            /></a>
+          </li>
+          <li>
+            <a href="https://twitter.com" class="icono-red"
+              ><span class="texto-red">Twitter</span
+              ><img src="img/twitter.png" alt="Twitter" class="img-red"
+            /></a>
+          </li>
+          <li>
+            <a href="https://instagram.com" class="icono-red"
+              ><span class="texto-red">Instagram</span
+              ><img src="img/instagram.png" alt="Instagram" class="img-red"
+            /></a>
+          </li>
+        </ul>
       </address>
 
       <p class="footer-copyright"><small>&copy; 2026 PAWPrints</small></p>

@@ -242,20 +242,22 @@ article:focus-within .overlay {
 
 /* DISEÑO PC (Más de 768px) */
 @media screen and (min-width: 994px) {
-  .contenido-catalogo {
-    display: flex;
-    align-items: flex-start;
-    gap: 2rem;
-    padding: 1rem 1.5rem;
-    max-width: 1200px;
-    margin: 0 auto;
+  .catalogo-main {
+    grid-template-areas:
+      "hero hero hero hero"
+      ". filtros libros .";
+    display: grid;
+    grid-template-columns: 1fr minmax(auto, 300px) minmax(auto, 1000px) 1fr;
+    gap: 1rem;
   }
-  /* El section que envuelve los filtros */
-  .contenido-catalogo > section:first-of-type {
-    flex-shrink: 0;
-    width: 260px;
-    position: sticky;
-    top: 1rem;
+
+  .hero-catalogo {
+    grid-area: hero;
+  }
+
+  .seccion-filtros {
+    grid-area: filtros;
+    min-width: 300px;
   }
 
   .filtros summary {
@@ -268,8 +270,10 @@ article:focus-within .overlay {
 
   /* Grilla de libros */
   .grilla-libros {
+    grid-area: libros;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+    width: 100%;
   }
 
   .grilla-libros article {
